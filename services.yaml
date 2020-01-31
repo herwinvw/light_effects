@@ -1,0 +1,48 @@
+blink:
+    description: Blink a light x times, then reset it to its original state
+    fields:
+        entity_id: 
+            description: Name(s) of the entities to set
+            example: 'light.livingroom_light'
+        blinks:
+            description: 'Number of blinks, default: 2'
+            example: 2
+        blink_on:
+            description: 'Duration of the on phase of the blink, default: 2'
+            example: 0.5
+        blink_off:
+            description: 'Duration of the off phase of the blink, default: 1'
+            example: 0.5
+        trans_on:
+            description: 'On transition duration 0..1, default: 1'
+            example: 1
+        trans_off:
+            description: 'Off transition duration 0..1, default: 1'
+            example: 1
+        rgb_color:
+            description: Color for the light in RGB-format.
+            example: "[255, 100, 100]"
+        color_name:
+            description: A human readable color name.
+            example: "red"
+        hs_color:
+            description: Color for the light in hue/sat format. Hue is 0-360 and Sat is 0-100.
+            example: "[300, 70]"
+        xy_color:
+            description: Color for the light in XY-format.
+            example: "[0.52, 0.43]"
+        color_temp:
+            description: Color temperature for the light in mireds.
+            example: 250
+        kelvin:
+            description: Color temperature for the light in Kelvin.
+            example: 4000
+        white_value:
+            description: Number between 0..255 indicating level of white.
+            example: "250"
+        brightness:
+            description: Number between 0..255 indicating brightness, where 0 turns the light off, 1 is the minimum brightness and 255 is the maximum brightness supported by the light.
+            example: 120
+        brightness_pct:
+            description: Number between 0..100 indicating percentage of full brightness, where 0 turns the light off, 1 is the minimum brightness and 100 is the maximum brightnes supported by the light.
+            example: 47

@@ -1,0 +1,8 @@
+{
+    "domain": "light_effects",
+    "name": "Light effects",
+    "documentation": "http://blah.com",
+    "requirements": [],
+    "dependencies": [],
+    "codeowners": []
+}
